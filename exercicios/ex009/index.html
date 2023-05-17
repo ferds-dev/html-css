@@ -4,32 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Outras formatações</title>
+    <title>Listas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
 </head>
 <body>
-    <h1>Outras formatações</h1>
-    <p>Código-fonte / Pré-formatação</p>
-    <p>O comando <code>document.getElementbyId('teste')</code>é escrito em linguagem JavaScript</p>
-    <pre>
-        <code>
-num i = int(input('Digite um número'))
-if num % 2 == 0:
-    print(f'O número {num} é par)
-else:
-    print(f'O número {num} é impar)
-    print('fim do programa)
-        </code>
-    </pre>
-    <h2>Citações</h2>
-    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q></p>
-    <h2>Citações completas</h2>
-    <p>Segundo Jeff Noble, no seu livro HTML para Leigos: <blockquote cite="https://www.google.com.br/books/edition/Guia_de_Orienta%C3%A7%C3%A3o_e_Desenvolvimento_d/1YuwDwAAQBAJ?hl=pt-PT&gbpv=1&dq=html&printsec=frontcover">
-        observe que, na apresentaçao da estrutura sintática de uma tag, a de finalizaçào nome da tag de inicializaçao, sendo a de finalizacao precedida pela barra de divisao "/"
-    </blockquote>
-    <h2>Abreviações</h2>
-    <p>Estou estudando <abbr title="hipertext markup language">HTML</abbr> e <abbr title="cascading style sheets">CSS</abbr>. Estou adorando!</p>
-    <h2>Texto Invertido</h2>
-    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML</bdo></p>
-</p>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas ordenadas</h2>
+    <ol type="1" > <!-- 1 A a I i-->
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol> <!-- disc circle square-->
+    <h2>Lista não ordenadas</h2>
+    <ul>
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Manteiga</li>
+        <li>Arooz</li>
+        <li>Tomarte</li>
+        <li>Feijão</li>
+    </ul>
+    <h2>MInhas linguagens favoritas</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a"> 
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="5">
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+    <h2>Meus jogos favoritos</h2>
+    <ol>
+        <li>NES</li>
+        <ul type="disc">
+            <li>Mario Bros</li>
+            <ul>
+                <li>Mario Bros 3</li>
+                <li>Mario: Lost Levels</li>
+            </ul>
+            <li>Ninja Gaiden</li>
+        </ul>
+        <li>SNES</li>
+        <ul type="disc">
+            <li>Mario</li>
+            <li>Donkey Kong</li>
+        </ul>
+        <li>PlayStation</li>
+        <ul type="disc">
+            <li>Final Fantasy</li>
+            <li>Castlevania</li>
+        </ul>
+    </ol>
+    <h2>Lista de definições</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação do conteudo de um site</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criaçao do design de um site</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site</dd>
+    </dl>
 </body>
 </html>
