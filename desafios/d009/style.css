@@ -1,0 +1,18 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+body{
+    background-color: rgb(24, 24, 24);
+    text-align: center;
+}
+
+img{
+    width: 450px;
+}
+
+
+#seta{
+    width: 52px;
+}
